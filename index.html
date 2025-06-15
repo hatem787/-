@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تطبيق فيديوهات ديناميكي</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="auth-container">
+    <h2>تسجيل الدخول</h2>
+    <input type="email" id="email" placeholder="البريد الإلكتروني" />
+    <input type="password" id="password" placeholder="كلمة المرور" />
+    <button id="loginBtn">دخول</button>
+    <button id="signupBtn">تسجيل جديد</button>
+    <button id="googleLogin">دخول بـ Google</button>
+  </div>
+
+  <div id="mainApp" style="display:none;">
+    <button id="logoutBtn">تسجيل الخروج</button>
+
+    <div id="upload-container">
+      <h3>رفع فيديو جديد</h3>
+      <input type="file" id="videoInput" accept="video/*" />
+      <button id="uploadBtn">رفع</button>
+    </div>
+
+    <div class="video-container" id="videoContainer"></div>
+
+    <div id="profile-container">
+      <h3>الملف الشخصي</h3>
+      <p id="userEmail"></p>
+      <ul id="likedVideosList"></ul>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
